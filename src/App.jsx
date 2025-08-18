@@ -57,7 +57,7 @@ export default function App() {
             </label>
             <textarea
               className="w-full h-48 p-4 border border-gray-300 rounded-lg resize-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 font-mono text-sm bg-gray-50 hover:bg-white"
-              placeholder="Paste your data here...&#10;Example:&#10;server1 20GB active&#10;server2 50GB inactive&#10;server3 10GB active"
+              placeholder="Paste your data here...&#10;Example:&#10;02444XXXX 20GB&#10;059XXXXXX 50GB&#10;024961XXXX 10GB"
               value={rawData}
               onChange={(e) => setRawData(e.target.value)}
             />
