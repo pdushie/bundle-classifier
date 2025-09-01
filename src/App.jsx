@@ -12,7 +12,7 @@ export default function App() {
     const allocationSummary = {};
 
     lines.forEach(line => {
-      const parts = line.split(/\s+/); // split by spaces or tabs
+      const parts = line.split(/[\s-]+/); // split by spaces, tabs, or hyphens
       let allocation = parts[1] || ""; // take second column
       allocation = allocation.replace(/[^0-9]/g, ""); // extract only digits (e.g., "20GB" -> "20")
 
